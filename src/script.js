@@ -66,6 +66,5 @@ function adaugaLiniiTabel() {
         myIngredienstCell.innerHTML = listaIngrediente[i];
         MyQantityCell.innerHTML = listaCantitati[i];
     }
-    
 
 }
