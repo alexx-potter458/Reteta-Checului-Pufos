@@ -4,7 +4,7 @@ var listaIndex = 0;
 document.addEventListener("DOMContentLoaded", letsDoDis);
 
 function letsDoDis() {
-    alert("am incarcat prastia asta, acum merg comezile");
+    //alert("am incarcat prastia asta, acum merg comezile");
     
     var imagineCuMancare = document.getElementById("imagineChec");
     imagineCuMancare.addEventListener("click", schimbaPozaCuHaleala);
@@ -12,6 +12,22 @@ function letsDoDis() {
     zonaDePoze.addEventListener("click", adaugaPoze)
     
     adaugaLiniiTabel();
+
+    var navigation = document.getElementById("meniuNavigare");
+    var options = navigation.getElementsByClassName("btn");
+
+    for(var i = 0; i < options.length; i++) {
+        options[i].addEventListener("click", activateNavBtn);
+    }
+
+}
+
+function activateNavBtn() {
+    var current = document.getElementsByClassName("active");
+    for(var i = 0; i < current.length; i++)
+        current[i].className = current[i].className.replace(" active", "");
+    var mainButton = event.target;
+    mainButton.className += " active";
 
 }
 

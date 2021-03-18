@@ -23,6 +23,8 @@ body {
 
 #meniuNavigare {
     display: block;
+    position: sticky;
+    top: 1%;
     margin: 0px;
     margin-top: 1em;
     padding-top: 1em;
@@ -40,7 +42,7 @@ body {
     align-items: flex-start;
 }
 
-#meniuNavigare a:hover {
+.active, #meniuNavigare a:hover {
     color:#333;
     background-color:deepskyblue;
 }
@@ -139,6 +141,19 @@ table tr:nth-of-type(even) {
 }
 
 #bandaPoze {
+   
     margin: 1em;
     background-color: #333;
+}
+
+figure {
+
+    display: inline-block;
+    width: 40%;
+}
+
+figure img {
+    float: left;
+    width: 40%;
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.5);
 }
