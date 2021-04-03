@@ -34,7 +34,7 @@ body {
 #meniuNavigare {
     display: block;
     position: sticky;
-    top: 1%;
+    top: 0.5%;
     margin: 0px;
     margin-top: 1em;
     padding-top: 1em;
@@ -45,6 +45,7 @@ body {
 
 #meniuNavigare a {
     display: subgrid;
+    position: relative;
     padding:1em;
     text-decoration: none;
     text-align: center;
@@ -153,7 +154,10 @@ table tr:nth-of-type(even) {
 }
 
 #bandaPoze {
-   display: grid;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
    grid-template-columns: auto auto auto auto;
    grid-template-rows: auto auto auto auto;
     margin: 1em;
@@ -171,3 +175,46 @@ figure img {
     margin: 10px;
     box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.5);
 }
+
+#container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#container2 > img {
+    width: 200px;
+    height: 140px;
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.5);
+    margin: 1em;
+
+}
+
+.subMeniu {
+    
+    background-color: #333;
+    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    color: aliceblue;
+    position: absolute;
+    margin-top: 20px;
+    visibility: hidden;
+}
+
+.subMeniu > a {
+    display: block;
+    text-decoration: none;
+    background-color: red;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding: 1em;
+    margin: auto;
+    text-align: center;
+}
+
+.btn:hover  .subMeniu {
+    visibility: visible;
+}
+
+
+

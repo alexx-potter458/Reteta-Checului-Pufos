@@ -20,6 +20,20 @@ function letsDoDis() {
         options[i].addEventListener("click", activateNavBtn);
     }
 
+    var ingredientsBtn = document.getElementById("ibtn");
+    ingredientsBtn.addEventListener("click", subMenuIngredients);
+
+    var ibtnWidth = ingredientsBtn.style.width;
+}
+
+function subMenuIngredients() {
+    var subMenuElem = document.getElementById("subMeniu");
+
+    if(subMenuElem.style.visibility == 'hidden')
+        subMenuElem.style.visibility = 'visible';
+    else
+        subMenuElem.style.visibility = 'hidden';
+
 }
 
 function activateNavBtn() {
